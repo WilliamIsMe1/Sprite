@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "sprite",
+  "version": "${version}",
+  "name": "Sprite",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/sprite/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "william.sprite.client.SpriteClient"
+    ],
+    "main": [
+      "william.sprite.Sprite"
+    ]
+  },
+  "mixins": [
+    "sprite.mixins.json",
+    {
+      "config": "sprite.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
