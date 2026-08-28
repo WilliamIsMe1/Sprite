@@ -7,7 +7,6 @@
   "authors": [],
   "contact": {},
   "license": "All-Rights-Reserved",
-  "icon": "assets/sprite/icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [
